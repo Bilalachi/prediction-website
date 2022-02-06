@@ -13,13 +13,20 @@ let input = document.querySelector("input")
 let button = document.getElementById("prediction-button");
 
 button.addEventListener("click", function () {
-    predict_Gender(input.value), predict_Nationality()
+    predict_Gender(), predict_Nationality() ,predict_age()
   });
 
   async function predict_Gender() {
     let gender_result = await fetch ("https://api.genderize.io/?name=" + input.value);
     let str1 = await gender_result.json()
     result1.innerHTML = str1.gender
+}
+
+async function predict_age() {
+    let age_result = await fetch ("https://api.agify.io/?name=" + input.value);
+    let str3 = await age_result.json()
+    result3.innerHTML = str3.age
+    
 }
 
 async function predict_Nationality() {
