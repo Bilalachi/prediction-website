@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h3>Hello</h3>
-    <img src ="" id="imageRandom">
-    <input type="text" id="name" placeholder="Enter Name">
-    <button id="prediction-button">Get Prediction</button>
-    <span id="result1">result1</span>
-    <span id="result2">result1</span>
-    <span id="result3">result1</span>
 
+<body>
+    <main>
+    <div class="container1">
+        <div class="message">
+        <span>A Dog Pic To Brighten Your Day</span>
+        </div>
+        <div class="dog">
+        <img src="" id="imageRandom">
+        </div>
+    </div>
+    <div class="container2">
+        <div class="msg">
+            <span>Input your name and click Predict</span>
+        </div>
+        <div class="input">
+        <input type="text" id="name" placeholder="Enter Name">
+        <button id="prediction-button">Get Prediction</button>
+        </div>
+        <div class="results">
+            <ul id="predictions">
+                <li id="result1"></li>
+                <li id="result2"></li>
+                <li id="result3"></li>
+            </ul>
+    </div>
+
+    </div>
+    
+
+    </main>
     <script src="main.js"></script>
 </body>
+
 </html>
